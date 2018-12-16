@@ -501,7 +501,6 @@ DEPENDENCIES
   rspec-rails
   ruby-prof
   ruby_parser
-  sass (~> 3.2.0)
   sass-rails
   sentry-raven
   sextant
