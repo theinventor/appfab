@@ -4,7 +4,7 @@ ruby '2.5.3'
 gem 'rails', '~> 4.2.8'
 
 # webservers
-# gem 'rainbows', group: :production
+ gem 'puma', group: :production
 gem 'thin',     group: :development
 
 # load .env

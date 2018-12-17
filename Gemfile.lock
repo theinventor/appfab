@@ -273,6 +273,7 @@ GEM
     pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
+    puma (3.12.0)
     pusher (0.12.0)
       httpclient (~> 2.3.0)
       multi_json (~> 1.0)
@@ -475,6 +476,7 @@ DEPENDENCIES
   pry-nav
   pry-rails
   pry-remote
+  puma
   pusher
   pusher-fake
   query_reviewer
