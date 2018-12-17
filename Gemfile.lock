@@ -371,10 +371,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip (< 1.0.0)
       websocket (~> 1.0.4)
-    sentry-raven (0.7.1)
-      faraday (>= 0.7.6)
-      hashie (>= 1.1.0)
-      uuidtools
     sexp_processor (4.3.0)
     sextant (0.2.4)
       rails (>= 3.2)
@@ -414,7 +410,6 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    uuidtools (2.1.4)
     virtus (1.0.1)
       axiom-types (~> 0.0.5)
       coercible (~> 1.0)
@@ -499,7 +494,6 @@ DEPENDENCIES
   ruby_parser
   sass (~> 3.2.0)
   sass-rails
-  sentry-raven
   sextant
   state_machine
   terminal-notifier-guard

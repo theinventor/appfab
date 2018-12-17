@@ -71,8 +71,6 @@ gem 'roadie'
 # Pagination
 gem 'will_paginate'
 
-# exception reporting
-gem 'sentry-raven'
 
 # coffeescript JS views
 gem 'coffee-rails'
