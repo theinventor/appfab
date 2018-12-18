@@ -11,7 +11,7 @@
             &nbsp;
             %i.fa.fa-caret-right
         - else
-          = link_to login_omniauth_authorize_path(provider: :google_oauth2), class: 'btn btn-primary' do
+          = link_to "/session/auth/google_oauth2/callback, ", class: 'btn btn-primary' do
             = _('Sign in with your Google account')
             &nbsp;
             %i.fa.fa-caret-right

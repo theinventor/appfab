@@ -1,13 +1,8 @@
 # AppFab
 
-[![Build Status](https://travis-ci.org/mezis/appfab.png?branch=master)](https://travis-ci.org/mezis/appfab)
-[![Code Climate](https://codeclimate.com/github/mezis/appfab.png)](https://codeclimate.com/github/mezis/appfab)
-[![Dependency Status](https://gemnasium.com/mezis/appfab.png)](https://gemnasium.com/mezis/appfab)
-[![Coverage Status](https://coveralls.io/repos/mezis/appfab/badge.png)](https://coveralls.io/r/mezis/appfab)
-
 ## Kanban, one level up: agility at the product level.
 
-> AppFab helps software product teams build fanstastic apps, by encouraging
+> This app (codename AppFab) helps software product teams build fanstastic apps, by encouraging
 > contribution, transparency, participative planning, and emergent
 > prioritisation of projects.
 
@@ -20,7 +15,7 @@ through voting, and follow them through their whole lifecycle.
 
 ### Setup
 
-AppFab requires `Ruby 2.1`, `PostgreSQL` and `memcached` to be installed.
+AppFab requires `Ruby 2.5.3`, `PostgreSQL` and `memcached` to be installed.
 
 With those installed you can setup the application by running: `./bin/setup`
 
@@ -35,16 +30,13 @@ simplest way to serve SSL locally.
 
 ### Usage
 
-Go to [appfab.io](http://appfab.io/) and create your account. Signup is free
-and the app is pretty self-explanatory.
-
-As the app is in beta, the hosted version is free for all but aboslutely no
-SLA or guarantee of customer support is provided.
-
+Just spin it up and login. You'll need to setup the oauth stuff for google
+before using it in production environment. Once you login with your first user
+you can jump on the rails console and add abilities.
 
 ### Contributing
 
-Propose or pick an [issue](https://github.com/mezis/appfab/issues), fork,
+Propose or pick an issue fork,
 write tests, write code, refactor, issue a pull request.
 
 Please make sure to
@@ -63,7 +55,7 @@ Please always issue pull requests against the `master` branch.
 AppFab is free software, copyright (c) HouseTrip Ltd.
 
 Its source code is made available to the public under a slightly modified
-version of the [AGPL 3](http://www.gnu.org/licenses/agpl-3.0.html) licence,
+version of the [AGPL 3](http://www.gnu.org/licenses/agpl-3.0.html) license,
 which:
 
 - comes with extensive copyleft provision like the GPL,

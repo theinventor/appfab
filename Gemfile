@@ -4,7 +4,7 @@ ruby '2.5.3'
 gem 'rails', '~> 4.2.8'
 
 # webservers
-# gem 'rainbows', group: :production
+ gem 'puma', group: :production
 gem 'thin',     group: :development
 
 # load .env
@@ -71,8 +71,6 @@ gem 'roadie'
 # Pagination
 gem 'will_paginate'
 
-# exception reporting
-gem 'sentry-raven'
 
 # coffeescript JS views
 gem 'coffee-rails'
@@ -102,7 +100,7 @@ gem 'animation'
 gem 'uglifier', '>= 1.0.3'
 
 # Search
-gem 'textacular'
+gem 'textacular', '~> 4.0'
 
 group :development do
   # better generators
@@ -157,7 +155,7 @@ group :development do
   gem 'quiet_assets'
 
   # nicer error messages in the browser
-  gem "better_errors"
+  # gem "better_errors"
   gem "binding_of_caller"
 end
 

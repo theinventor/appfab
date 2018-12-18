@@ -45,9 +45,6 @@ GEM
       descendants_tracker (~> 0.0.1)
       ice_nine (~> 0.9)
     bcrypt (3.1.12)
-    better_errors (1.1.0)
-      coderay (>= 1.0.0)
-      erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.2.2)
@@ -64,16 +61,16 @@ GEM
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
     chunky_png (1.2.9)
-    coderay (1.1.0)
+    coderay (1.1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    coffee-rails (4.0.1)
+    coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0, < 5.0)
-    coffee-script (2.2.0)
+      railties (>= 4.0.0)
+    coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.12.2)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -141,7 +138,7 @@ GEM
     equalizer (0.0.9)
     erubis (2.7.0)
     eventmachine (1.2.7)
-    execjs (2.0.2)
+    execjs (2.7.0)
     faker (1.2.0)
       i18n (~> 0.5)
     faraday (0.8.8)
@@ -229,15 +226,15 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
     mini_mime (1.0.1)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
     multi_test (0.0.2)
     multipart-post (1.2.0)
     newrelic_rpm (5.6.0.349)
     nifty-generators (0.4.6)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.9.0)
+      mini_portile2 (~> 2.4.0)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -276,6 +273,7 @@ GEM
     pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
+    puma (3.12.0)
     pusher (0.12.0)
       httpclient (~> 2.3.0)
       multi_json (~> 1.0)
@@ -374,10 +372,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip (< 1.0.0)
       websocket (~> 1.0.4)
-    sentry-raven (0.7.1)
-      faraday (>= 0.7.6)
-      hashie (>= 1.1.0)
-      uuidtools
     sexp_processor (4.3.0)
     sextant (0.2.4)
       rails (>= 3.2)
@@ -399,8 +393,8 @@ GEM
       tins (~> 0.8)
     terminal-notifier-guard (1.5.3)
     text (1.2.3)
-    textacular (5.0.1)
-      activerecord (>= 3.0, < 5.2)
+    textacular (4.0.1)
+      activerecord (>= 3.0, < 5.1)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -410,14 +404,14 @@ GEM
     tilt (2.0.9)
     timecop (0.7.1)
     tins (0.9.0)
-    turbolinks (2.1.0)
-      coffee-rails
+    turbolinks (5.2.0)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    uuidtools (2.1.4)
     virtus (1.0.1)
       axiom-types (~> 0.0.5)
       coercible (~> 1.0)
@@ -438,7 +432,6 @@ PLATFORMS
 DEPENDENCIES
   andand
   animation
-  better_errors
   binding_of_caller
   bootstrap-sass
   cancan
@@ -484,6 +477,7 @@ DEPENDENCIES
   pry-nav
   pry-rails
   pry-remote
+  puma
   pusher
   pusher-fake
   query_reviewer
@@ -503,11 +497,10 @@ DEPENDENCIES
   ruby_parser
   sass (~> 3.2.0)
   sass-rails
-  sentry-raven
   sextant
   state_machine
   terminal-notifier-guard
-  textacular
+  textacular (~> 4.0)
   thin
   timecop
   turbolinks
